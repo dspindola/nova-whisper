@@ -1,0 +1,8 @@
+{
+  "name": "client",
+  "type": "module",
+  "main": "./entry.client.ts",
+  "scripts": {
+    "dev": "bun --watch ./entry.client.ts"
+  }
+}

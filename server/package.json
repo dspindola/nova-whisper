@@ -1,0 +1,8 @@
+{
+  "name": "server",
+  "main": "./entry.server.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "bun --watch ./entry.server.ts"
+  }
+}

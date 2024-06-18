@@ -1,0 +1,8 @@
+{
+  "name": "api",
+  "type": "module",
+  "main": "./entry.api.ts",
+  "scripts": {
+    "dev": "bun --watch ./entry.api.ts"
+  }
+}
