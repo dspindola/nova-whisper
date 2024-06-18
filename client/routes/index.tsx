@@ -1,16 +1,25 @@
-import React from "react"
-import { index } from "../actions"
+import React from "react";
+import { GET } from "../actions/api/index";
+import { server } from "../libs/api";
 
-const loader = index();
+const loader = async () =>
+  GET(server).catch((error) => {
+    console.log(error);
+    return {
+      data: "error",
+      error: error,
+      response: new Response(),
+      status: 500,
+      headers: {},
+    };
+  });
 
 export default function Index() {
-  const { data, error } = React.use(
-    loader
-  );
+  const RESPONSE = React.use(loader());
 
-  if (!data || error) {
-    return <p>error</p>
+  if (RESPONSE?.error) {
+    return <p>error</p>;
   }
 
-  return <p>{data}</p>
+  return <p>{RESPONSE.data}</p>;
 }

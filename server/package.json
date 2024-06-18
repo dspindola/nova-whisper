@@ -3,6 +3,6 @@
   "main": "./entry.server.ts",
   "type": "module",
   "scripts": {
-    "dev": "bun --watch ./entry.server.ts"
+    "dev": "bun run --watch ./entry.server.ts"
   }
 }

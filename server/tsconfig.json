@@ -2,7 +2,7 @@
   "extends": "../tsconfig.options.json",
   "references": [
     {
-      "path": "../tsconfig.json"
+      "path": "../tsconfig.options.json"
     }
   ]
 }

@@ -1,10 +1,8 @@
-import app from "../app.config"
-import api from "../api/entry.api"
-import Elysia from "elysia"
-import { cors } from "@elysiajs/cors"
+import entry from "../api/entry.api"
 
-
-new Elysia().use(cors()).use(api()).listen({
+const app = entry.listen({
   hostname: "0.0.0.0",
-  port: app.server.bun.server.port
+  port: '8080'
+}, ({ url }) => {
+  console.log('%s', url)
 })

@@ -1,1 +1,1 @@
-await Bun.$`bun run --filter="./server" --filter="./client" dev`
+await Bun.$`bun run --filter="./server" --filter="./client" dev`;

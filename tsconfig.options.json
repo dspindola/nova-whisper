@@ -7,5 +7,7 @@
     "allowSyntheticDefaultImports": true,
     "strict": true
   },
-  "include": ["app.config.ts"]
+  "include": [
+    "app.config.ts"
+  ]
 }
