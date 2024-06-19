@@ -8,6 +8,7 @@
     "strict": true
   },
   "include": [
-    "app.config.ts"
+    "app.config.ts",
+    "**/*.d.ts"
   ]
 }

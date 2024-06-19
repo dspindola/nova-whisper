@@ -4,6 +4,9 @@
   "workspaces": [
     "{server,api,client}/**"
   ],
+  "scripts": {
+    "compile": "bun run bun-plugin-replit.js && bun build --compile ./bin/cli.js --outfile=.bin/cli"
+  },
   "devDependencies": {
     "@types/bun": "latest",
     "@types/node": "^20.14.5",

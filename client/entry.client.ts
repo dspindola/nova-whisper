@@ -1,4 +1,3 @@
-// import app from "../app.config"
 
 await Bun.write(`./vite.config.ts`, `import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
@@ -13,8 +12,3 @@ export default defineConfig({
   },
 })
 `)
-
-// await Bun.$.env({
-//   ...process.env,
-//   VITE_APP_API_DOMAIN: "0.0.0.0:8080",
-// })`bun --bun vite`

@@ -1,0 +1,3 @@
+[loader]
+".replit" = "toml"
+".ts" = "ts"
